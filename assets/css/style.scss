@@ -2,14 +2,3 @@
 ---
 
 @import "{{ site.theme }}";
-body {
-    background-image: url("/assets/img/mohammad-alizade-XgeZu2jBaVI-unsplash.jpg");
-    background-size: 100% 20em;
-    background-repeat: no-repeat;
-} 
-
-@media only screen and (max-width: 950px) {
-    section {
-        padding-top: 18em;
-    }
- }
