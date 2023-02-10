@@ -8,10 +8,8 @@ body {
     background-repeat: no-repeat;
 } 
 
-section {
-    padding-top: 18em;
-}
-
-h1.site-title a, h1.site-title a:hover {
-    color: white;
-}
+@media only screen and (max-width: 950px) {
+    section {
+        padding-top: 18em;
+    }
+ }
