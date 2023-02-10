@@ -1,3 +1,8 @@
+---
+---
+
+@import "{{ site.theme }}";
+
 body {
     background-image: url("/assets/img/mohammad-alizade-XgeZu2jBaVI-unsplash.jpg");
     background-size: 100% 20em;
@@ -11,5 +16,3 @@ section {
 h1.site-title {
     color: white;
 }
-
-@import "{{ site.theme }}";
