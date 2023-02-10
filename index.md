@@ -7,7 +7,7 @@ Welcome to my blog!
 
 # Posts
 
-## Girl Scout NFT Collection
+## [Girl Scout NFT Collection](./posts/202302100900-gs-nft.md)
 _Feb 10, 2023_
 
 [Read article](./posts/202302100900-gs-nft.md)
