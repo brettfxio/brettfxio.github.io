@@ -9,6 +9,8 @@ google_analytics: G-889VBFSPJR
 logo: /assets/img/logo.jpg
 twitter_url: https://twitter.com/brettfxio
 
+list_title: Posts
+
 minima:
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
