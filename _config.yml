@@ -9,7 +9,8 @@ google_analytics: G-889VBFSPJR
 logo: /assets/img/logo.jpg
 twitter_url: https://twitter.com/brettfxio
 
-list_title: Posts
+page:
+  - list_title: Posts
 
 minima:
   # Minima date format.
