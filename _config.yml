@@ -4,7 +4,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 title: Brett's Blog
-description: Hi! Welcome to my blog.
+description: Hello! 👋 I'm Brett. I write about tech, business, and life. Thanks for stopping by.
 google_analytics: G-889VBFSPJR
 logo: /assets/img/logo.jpg
 twitter_url: https://twitter.com/brettfxio
