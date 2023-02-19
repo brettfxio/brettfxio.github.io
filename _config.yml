@@ -4,6 +4,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
   - amp-jekyll
+url: https://brett.functions.io
 title: Brett's Blog
 description: Hello! 👋 I'm Brett. I write about tech, business, and life. Thanks for stopping by.
 #google_analytics: G-889VBFSPJR
