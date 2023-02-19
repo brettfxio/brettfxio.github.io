@@ -12,7 +12,6 @@
     <script src="https://calendar.google.com/calendar/scheduling-button-script.js" async></script>    
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
     <script async custom-element="amp-script" src="https://cdn.ampproject.org/v0/amp-script-0.1.js"></script>
-    {% seo %}
     <!--[if lt IE 9]>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
@@ -30,23 +29,6 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
 
         <p class="view"><a href="https://functions.io">View My Project</a></p>
-
-        <!-- Google Calendar Appointment Scheduling begin -->
-        <amp-script id="scheduler" script="amp-scheduler-source-script" nodom></amp-script>
-        <script id="amp-scheduler-source-script" type="text/plain" target="amp-script">
-          (function() {
-            var target = document.currentScript;
-            window.addEventListener('load', function() {
-              calendar.schedulingButton.load({
-                url: 'https://calendar.google.com/calendar/appointments/schedules/AcZssZ1RXs9W9ClVUQR3YC0TBNjTZlH6ld5HFdz_sQS_qpXi1ygC94sDkZZbxYYMdGsapPQmKiRUp66b?gv=true',
-                color: '#039BE5',
-                label: 'Schedule an appointment',
-                target,
-              });
-            });
-          })();
-        </script>
-        <!-- end Google Calendar Appointment Scheduling -->
 
         {% if site.show_downloads %}
         <ul class="downloads">
