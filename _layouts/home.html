@@ -33,7 +33,12 @@ layout: default
             </a>
           </h3>
           {%- if site.show_excerpts -%}
-            {{ post.excerpt }}... <a rel="amphtml" class="post-link" href="{{ post.url | relative_url }}">View</a>
+            <p>
+            {{ post.excerpt | strip_html | append: "..." }}
+            {% if post.excerpt != post.content %}
+              <a rel="amphtml" class="post-link" href="{{ post.url | relative_url }}"> View</a>
+            {% endif %}
+            </p>
           {%- endif -%}
         </li>
         {%- endfor -%}
