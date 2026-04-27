@@ -1,7 +1,7 @@
 # Setup
-title: Poole
-tagline: The Jekyll Butler
-url: https://getpoole.com
+title: My Jekyll Site
+tagline:
+url: http://localhost:4000
 paginate: 1
 baseurl: ""
 permalink: pretty
@@ -11,6 +11,8 @@ plugins:
   - jekyll-gist
   - jekyll-paginate
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 
 # Optimize Jekyll
 exclude:
@@ -28,14 +30,13 @@ sass:
 
 # Options
 
-# Replace this value and uncomment to enable Google Analytics tracking
 # ga_analytics: UA-000000-0
 
 # Specify the author for blog posts
 author:
-  name: Mark Otto
-  url: https://twitter.com/mdo
-  email: markdotto@gmail.com
+  name:
+  url:
+  email:
 
 # Custom vars
-version: 3.0.0
+version: 1.0.0
