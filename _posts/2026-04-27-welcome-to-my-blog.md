@@ -1,5 +1,6 @@
 ---
 layout: post
+type: blog
 title: "Welcome to My Blog: Exploring the Future of STEM and Digital Safety"
 date: 2026-04-27
 ---

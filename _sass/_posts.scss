@@ -39,6 +39,32 @@
   color: var(--gray-600);
 }
 
+// Status updates
+.post-status {
+  padding: var(--spacer);
+  background-color: var(--gray-000);
+  border-left: 4px solid var(--blue);
+  border-radius: var(--border-radius);
+
+  .post-status-content {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .post-date {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.85rem;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .post-status {
+    background-color: var(--gray-900);
+    border-left-color: var(--blue-300);
+  }
+}
+
 
 // Related posts
 .related {
