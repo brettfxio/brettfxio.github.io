@@ -1,0 +1,44 @@
+<!-- Target for hiding/showing sidebar -->
+<input type="checkbox" class="sidebar-checkbox" id="sidebar-checkbox">
+
+<!-- Toggleable sidebar -->
+<div class="sidebar" id="sidebar">
+  <div class="sidebar-item">
+    <div class="sidebar-profile">
+      <img src="{{ '/assets/images/profile.jpg' | relative_url }}" alt="{{ site.title }}" class="profile-pic">
+    </div>
+    <p>
+      {{ site.title }}
+      {% if site.tagline %}
+        <br><small>{{ site.tagline }}</small>
+      {% endif %}
+    </p>
+  </div>
+
+  <nav class="sidebar-nav">
+    <a class="sidebar-nav-item{% if page.url == '/' %} active{% endif %}" href="{{ '/' | relative_url }}">Home</a>
+
+    {% comment %}
+      The code below dynamically generates a sidebar nav of the chapters in the
+      order specified in the _config.yml's `sidebar_nav_order` list.
+    {% endcomment %}
+
+    {% assign pages_list = site.pages | sort: "title" %}
+    {% for node in pages_list %}
+      {% if node.title != null %}
+        {% if node.layout == "page" %}
+          <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url | relative_url }}">{{ node.title }}</a>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+
+    <a class="sidebar-nav-item" href="{{ site.github.repository_url }}">GitHub project</a>
+    <span class="sidebar-nav-item">Currently v{{ site.version }}</span>
+  </nav>
+
+  <div class="sidebar-item">
+    <p>
+      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+    </p>
+  </div>
+</div>
