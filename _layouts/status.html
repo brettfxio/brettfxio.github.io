@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<article class="post post-status">
+  <div class="post-status-content">
+    {{ content }}
+  </div>
+  <time datetime="{{ page.date | date_to_xmlschema }}" class="post-date">{{ page.date | date_to_string }}</time>
+</article>
+
+{% if site.related_posts != empty %}
+<aside class="related">
+  <h3>Related posts</h3>
+  <ul class="related-posts">
+    {% for post in site.related_posts limit:3 %}
+      <li>
+        <a href="{{ site.baseurl }}{{ post.url }}">
+          {{ post.title }}
+          <small><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date_to_string }}</time></small>
+        </a>
+      </li>
+    {% endfor %}
+  </ul>
+</aside>
+{% endif %}
