@@ -34,9 +34,9 @@ sass:
 
 # Specify the author for blog posts
 author:
-  name:
+  name: Brett
   url:
-  email:
+  email: brett@functions.io
 
 # Custom vars
 version: 1.0.0
